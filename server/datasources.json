@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "Mongo": {
+    "host": "localhost",
+    "database": "edison",
+    "name": "Mongo",
+    "connector": "mongodb"
+  }
+}

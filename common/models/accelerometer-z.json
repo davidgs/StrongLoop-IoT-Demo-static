@@ -1,0 +1,21 @@
+{
+  "name": "Accelerometer-Z",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accelZ": {
+      "type": "number"
+    },
+    "time": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

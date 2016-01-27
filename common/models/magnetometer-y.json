@@ -1,0 +1,21 @@
+{
+  "name": "Magnetometer-Y",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "magY": {
+      "type": "number"
+    },
+    "time": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

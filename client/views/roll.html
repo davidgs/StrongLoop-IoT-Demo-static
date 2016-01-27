@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title> StrongLoop Edison IoT Demo</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="../c3.css" rel="stylesheet" type="text/css">
+    
+      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+      <script src="../js/c3.js"></script>     
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+  </head>
+  <body>
+  <head>
+  <body>
+  <div class="container">
+<div class="header"><h3 style="text-align:center">StrongLoop Edison IoT Demo</h3></div>
+<div class="nav">
+Select a Sensor to view:
+	  <script src="../js/menu.js" language="JavaScript" type="text/javascript"></script>
+
+</div>
+<div class="Main">
+
+
+      <h1 style="text-align:center">Edison Sensors: Roll (Gyroscope Y-Axis)</h1>
+     
+
+        <script>
+    
+    var graphData = [];
+    
+    jQuery.getJSON("../api/Rolls", function (data){
+    
+        var dataSet = data;
+        	var dateFormat = d3.time.format("%m/%d/%Y %H:%M:%S");
+        	dataSet.forEach(function(d) {
+        		d.date_posted = dateFormat.parse(d.time);
+                d.roll = +d.roll;
+        	});
+    
+            graphData[0] = dataSet.map(function(o) { return o.roll; });
+            graphData[1] =  dataSet.map(function(o) { return o.date_posted; });
+            graphData[0].splice(0,0,'Roll');
+            graphData[1].splice(0,0,'x');
+            var chart = c3.generate({
+                bindto: '#chart',
+                data: {
+                  x: 'x',
+                  columns: [
+                      graphData[1],
+                      graphData[0]
+          
+                  ]
+                },
+                axis: {
+                        x: {
+                            type: 'timeseries',
+                            tick: {
+                                format: '%d/%m/%Y %H:%M:%S'
+                            }
+                        }
+                    }
+            });
+        });
+		</script>
+        <div id="chart"></div>
+
+    </div>
+</div>
+<div class="footer">
+<p class="contact">
+© 2016 StrongLoop, an IBM Company: Developed by <a href ="http://dragonflyiot.com" target="_blank">Dragonfly IoT</a></p>
+</div>
+  </body>
+</html>
+</body>
+</html>

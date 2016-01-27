@@ -1,0 +1,48 @@
+{
+  "name": "Sensor",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accelX": {
+      "type": "number"
+    },
+    "accelY": {
+      "type": "number"
+    },
+    "accelZ": {
+      "type": "number"
+    },
+    "magX": {
+      "type": "number"
+    },
+    "magY": {
+      "type": "number"
+    },
+    "magZ": {
+      "type": "number"
+    },
+    "pitch": {
+      "type": "number"
+    },
+    "roll": {
+      "type": "number"
+    },
+    "temp": {
+      "type": "number"
+    },
+    "time": {
+      "type": "date"
+    },
+    "yaw": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

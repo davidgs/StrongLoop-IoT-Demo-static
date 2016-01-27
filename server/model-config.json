@@ -1,0 +1,119 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Pitch": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Roll": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Yaw": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Accelerometer": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Gyroscope": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Accelerometer-X": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Accelerometer-Y": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Accelerometer-Z": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Magnetometer": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Magnetometer-X": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Magnetometer-Y": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Magnetometer-Z": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Temperature": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Sensor": {
+    "dataSource": "Mongo",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Gyroscope",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "pitch": {
+      "type": "number"
+    },
+    "roll": {
+      "type": "number"
+    },
+    "yaw": {
+      "type": "number"
+    },
+    "time": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
