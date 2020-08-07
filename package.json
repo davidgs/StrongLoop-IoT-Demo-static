@@ -11,7 +11,7 @@
     "compression": "^1.0.3",
     "cors": "^2.5.2",
     "d3": "^3.5.13",
-    "jquery": "^2.2.0",
+    "jquery": "^3.5.1",
     "loopback": "^2.22.0",
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.1.0",
